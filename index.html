@@ -21,6 +21,10 @@
     <!--Animate On Scroll CSS CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
+    <!--Smooth Scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+
 </head>
 <body>
 
@@ -29,17 +33,17 @@
     <header>
         <div class="navbar">
             <div class="navbar-title">
-                <a href="index.html">hafizdzakaramadhan</a>
+                <a href="#">hafizdzakaramadhan</a>
             </div>
             <div class="navbar-menu open">
-                <a href="index.html" class="menu-active">HOME</a>
-                <a href="portfolio.html">PORTFOLIO</a>
-                <a href="contact.html">CONTACT</a>
+                <a href="#home">HOME</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
             </div>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
 
-        <div class="header-content">
+        <div class="header-content" id="home">
             <div class="header-title">
                 <h1 class="header-h1">Hi, I am Hafiz</h1>
                 <p class="header-p">Front End Developer from Indonesia</p>
@@ -49,7 +53,7 @@
 
     <!--PORTFOLIO SECTION-->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="portfolio-title">
             <h1 class="hidden">Portfolio</h1>
         </div>
@@ -79,7 +83,7 @@
 
     <!--CONTACT SECTION-->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-title">
             <h1 class="hidden">Contact</h1>
         </div>
