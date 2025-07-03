@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --primary-color: black;
+    --text-color: white;
+    --secondary-text: rgb(199, 199, 199);
+}
+
+/*HEADER SECTION*/
+
+header{
+    width: 100%;
+    padding-bottom: 220px;
+    background-color: var(--primary-color);
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(43, 43, 43, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar-title{
+    margin-left: 5%;
+}
+
+.navbar-title a{
+    color: var(--text-color);
+    font-weight: 750;
+}
+
+.navbar-menu{
+    margin-right: 5%;
+}
+
+.navbar-menu a{
+    color: var(--text-color);
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+#menu-icon{
+    display: none;
+}
+
+.menu-active{
+    color: var(--secondary-text) !important;
+}
+
+.header-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title{
+    padding-top: 250px;
+    color: var(--text-color);
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.header-title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+    #menu-icon{
+        display: inline-block;
+        color: var(--text-color);
+        font-size: 30px;
+        margin-right: 5%;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        height: 45vh;
+        background-color: rgba(43, 43, 43, 0.5);
+        margin: 0;
+        border-bottom-left-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s ease;
+    }
+
+    .navbar-menu a{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .open{
+        right: -100%;
+    }
+}
+
+
+@media (max-width:500px){
+    #menu-icon{
+        display: inline-block;
+        color: var(--text-color);
+        font-size: 30px;
+        margin-right: 5%;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        height: 45vh;
+        background-color: rgba(43, 43, 43, 0.5);
+        margin: 0;
+        border-bottom-left-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s ease;
+    }
+
+    .navbar-menu a{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .open{
+        right: -100%;
+    }
+}
